@@ -26,7 +26,7 @@ void drawWidget(int isBottom, u32 addr, u32 stride, u32 format, u32 colOffset) {
 	ovDrawString(addr, stride, format, height, 10, colOffset, color.r, color.g, color.b, buf);
 	for(int i=0;i<17;i++)
 	{
-		ovDrawString(addr, stride, format, height, 50+(i*10), colOffset+30, 0, 128, 255, &reiwa[i][0]);
+		ovDrawString(addr, stride, format, height, 50+(i*10), colOffset+30, 0, 128, 255, &reiwa[i]);
 	}
 }
 
